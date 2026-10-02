@@ -1,0 +1,356 @@
+/* Popup de gestão municipal - customização pós-qgis2web */
+.ol-popup.gestao-popup-active {
+    width: min(760px, 92vw);
+    max-width: 92vw;
+    padding: 0;
+    border-radius: 14px;
+    overflow: visible;
+    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.28);
+    background: #f4f7fb;
+}
+
+.ol-popup.gestao-popup-active:after {
+    border-top-color: #f4f7fb;
+}
+
+.ol-popup.gestao-popup-active .ol-popup-closer {
+    z-index: 20;
+    top: 8px;
+    right: 9px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.92);
+    color: #657080;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    box-shadow: 0 1px 5px rgba(0,0,0,.10);
+}
+
+.ol-popup.gestao-popup-active #popup-content {
+    width: 100%;
+    max-width: none;
+    max-height: 78vh;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.42;
+    color: #172033;
+    border-radius: 14px;
+}
+
+.gestao-popup {
+    background: #f4f7fb;
+}
+
+.gestao-header {
+    padding: 16px 46px 13px 18px;
+    background: #f4f7fb;
+    border-bottom: 1px solid #e1e7ef;
+}
+
+.gestao-title {
+    margin: 0;
+    color: #12385e;
+    font-size: 27px;
+    line-height: 1.12;
+    font-weight: 800;
+}
+
+.gestao-subtitle {
+    margin-top: 5px;
+    color: #627083;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.gestao-territorio {
+    margin-top: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: #eaf0f6;
+    color: #35465a;
+    font-size: 13px;
+}
+
+.gestao-body {
+    padding: 12px;
+}
+
+.gestao-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border-left: 5px solid #9aa8b6;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.gestao-card.municipal {
+    border-left-color: #2f80c9;
+}
+
+.gestao-card.outros {
+    border-left-color: #7c35d6;
+}
+
+.gestao-card.financeiro {
+    border-left-color: #28a657;
+    margin-top: 12px;
+    margin-bottom: 0;
+    background: #fbfffc;
+}
+
+.gestao-card-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.gestao-card-title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: 800;
+    color: #111827;
+}
+
+.gestao-badge {
+    flex: 0 0 auto;
+    border-radius: 999px;
+    padding: 4px 9px;
+    font-size: 12px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.gestao-card.municipal .gestao-badge {
+    color: #11588e;
+    background: #e1effb;
+}
+
+.gestao-card.outros .gestao-badge {
+    color: #5f199f;
+    background: #efe3ff;
+}
+
+.gestao-meta {
+    margin-bottom: 11px;
+    color: #46576a;
+    font-size: 14px;
+}
+
+.gestao-meta strong {
+    color: #172033;
+}
+
+.gestao-section-label {
+    margin: 11px 0 6px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #26364a;
+}
+
+.gestao-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gestao-list li {
+    position: relative;
+    margin: 4px 0;
+    padding-left: 18px;
+}
+
+.gestao-card.municipal .gestao-list li:before,
+.gestao-card.outros .gestao-list li:before {
+    content: "•";
+    position: absolute;
+    left: 2px;
+    top: -1px;
+    font-weight: 900;
+}
+
+.gestao-card.municipal .gestao-list li:before {
+    color: #2f80c9;
+}
+
+.gestao-card.outros .gestao-list li:before {
+    color: #7c35d6;
+}
+
+.gestao-fin-grid {
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) auto;
+    gap: 6px 18px;
+    margin-top: 7px;
+}
+
+.gestao-fin-grid .label {
+    color: #26364a;
+}
+
+.gestao-fin-grid .value {
+    text-align: right;
+    font-weight: 800;
+    color: #102b49;
+    white-space: nowrap;
+}
+
+.gestao-repasse-outros {
+    padding: 8px 10px;
+    margin: 8px 0 10px;
+    border-radius: 8px;
+    background: #f5effd;
+    color: #472176;
+}
+
+.gestao-repasse-outros strong {
+    color: #37145f;
+}
+
+.gestao-details {
+    margin-top: 10px;
+    border-top: 1px solid #e4e8ef;
+    padding-top: 9px;
+}
+
+.gestao-details > summary {
+    cursor: pointer;
+    list-style: none;
+    color: #5a159b;
+    font-weight: 800;
+    user-select: none;
+    outline: none;
+}
+
+.gestao-details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.gestao-details > summary:before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 7px;
+    font-size: 11px;
+    transition: transform .15s ease;
+}
+
+.gestao-details[open] > summary:before {
+    transform: rotate(90deg);
+}
+
+.gestao-entity-list {
+    margin-top: 10px;
+}
+
+.gestao-entity {
+    padding: 10px 4px;
+    border-bottom: 1px solid #e7eaf0;
+}
+
+.gestao-entity:last-child {
+    border-bottom: 0;
+}
+
+.gestao-entity-name {
+    font-weight: 800;
+    color: #182233;
+    line-height: 1.3;
+}
+
+.gestao-entity-type {
+    margin-top: 2px;
+    color: #765b91;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.gestao-entity-numbers {
+    margin-top: 4px;
+    color: #35465a;
+    font-size: 13px;
+}
+
+.gestao-entity-cnpj {
+    margin-top: 3px;
+    color: #687687;
+    font-size: 12px;
+}
+
+.gestao-empty {
+    color: #6b7786;
+    font-style: italic;
+    padding: 3px 0;
+}
+
+.gestao-action {
+    padding: 0 12px 14px;
+}
+
+.gestao-whatsapp {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border-radius: 9px;
+    background: #25D366;
+    color: #0d3c20 !important;
+    text-align: center;
+    text-decoration: none !important;
+    font-weight: 900;
+    font-size: 15px;
+    box-shadow: 0 2px 7px rgba(20, 120, 60, .18);
+}
+
+.gestao-whatsapp:hover {
+    background: #20c45d;
+}
+
+.gestao-action-note {
+    margin-top: 7px;
+    color: #667588;
+    text-align: center;
+    font-size: 11.5px;
+}
+
+@media (max-width: 680px) {
+    .ol-popup.gestao-popup-active {
+        width: 94vw;
+        max-width: 94vw;
+    }
+
+    .ol-popup.gestao-popup-active #popup-content {
+        max-height: 76vh;
+        font-size: 14px;
+    }
+
+    .gestao-title {
+        font-size: 23px;
+    }
+
+    .gestao-card-title-row {
+        display: block;
+    }
+
+    .gestao-badge {
+        display: inline-block;
+        margin-top: 6px;
+    }
+
+    .gestao-fin-grid {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .gestao-fin-grid .value {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+}
