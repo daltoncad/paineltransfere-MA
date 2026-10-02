@@ -1,23 +1,19 @@
-PAINEL DE GESTÃO DAS TRANSFERÊNCIAS — MARANHÃO
-================================================
+# README – Standalone qgis2web Export
 
-PACOTE PRONTO PARA GITHUB PAGES
+This export is completely "self-contained".
 
-1. Crie/abra o repositório no GitHub.
-2. Envie TODO o conteúdo desta pasta para a raiz do repositório:
-   index.html
-   layers/
-   styles/
-   resources/
-   webfonts/
-   images/
-3. No GitHub, abra Settings > Pages.
-4. Em Build and deployment, escolha Deploy from a branch.
-5. Selecione a branch main e a pasta /(root).
-6. Salve e aguarde a publicação.
+To view the map, simply open "index.html" by double-clicking it.
+No web server or additional software is required.
 
-IMPORTANTE
-- Não renomeie as pastas nem mova o index.html para outra subpasta sem ajustar os caminhos.
-- O popup personalizado separa Gestão Municipal e Outros Proponentes.
-- O botão de WhatsApp é montado dinamicamente para evitar truncamento do campo longo na exportação do QGIS.
-- A simbologia e as cores permanecem as que vieram da exportação qgis2web enviada.
+The map works because all the required JavaScript libraries are included
+in the export. The application loads the GeoJSON layer data and their styles
+directly from the local files.
+
+## Publishing on a Website
+
+If you upload the entire folder to a web server, the map will work 
+immediately by opening the "index.html" file.
+
+Example:
+
+"https://www.example.com/my-map/index.html"
